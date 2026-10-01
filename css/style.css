@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
     /* p: 16px; */
-    font-family: 'young serif';
+    font-family: 'young serif', serif ;
     background: hsl(30, 54%, 90%);
     line-height: 1.5;
 }
@@ -16,9 +17,11 @@ p{
     font-weight: 100;
 }
 
-img{
+.container img{
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
 }
 
 ol{
@@ -26,6 +29,8 @@ ol{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
 }
 
 ol li{
@@ -42,9 +47,10 @@ span{
     flex-direction: column;
     gap: 20px;
     border-radius: 15px;
-    max-width: 800px;
-    padding: 30px;
-    margin: 60px auto;
+    max-width: 700px;
+    padding: 30px 35px;
+    margin: 0 auto;
+
     /* justify-content: center;
     align-items: center; */
 }
@@ -52,7 +58,7 @@ span{
 /* prepare section */
 .prepare{
 
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 13px;
     background: hsl(330, 100%, 98%)
 }
@@ -102,7 +108,7 @@ span{
     flex-direction: column;
     gap: 10px;
     padding-bottom: 25px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #ccc;
 }
 
 .short-txt li::marker{
@@ -121,4 +127,38 @@ span{
 .large-txt h1{
     color: hsl(14, 45%, 36%);
     text-transform: capitalize;
+}
+
+/* nutrition-info */
+
+.nutrition-info{
+    margin-bottom: 15px;
+}
+
+.nutrition-info h1{
+    color: hsl(14, 45%, 36%);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.nutrition-row{
+    display: flex;
+    /* gap: 100px; */
+    padding: 12px 0;
+    border-bottom: 1px solid  #ccc;
+    /* justify-content: space-between; */
+}
+
+.nutrition-row:last-child{
+    border-bottom: none;
+}
+
+.nutrition-row dt{
+    width: 50%;
+   text-transform: capitalize;
+}
+
+.nutrition-row dd{
+    margin: 0;
+    font-weight: bold;
 }
