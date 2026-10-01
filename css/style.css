@@ -43,12 +43,15 @@ img{
 
 .prepare ul{
     padding-left: 25px;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .prepare h1{
     text-transform: capitalize;
     font-weight:400 ;
-    font-size: 23px;
+    font-size: 20px;
     font-family: outfit;
     margin-bottom: 15px;
     color: hsl(332, 51%, 32%);
@@ -61,3 +64,28 @@ img{
     flex-direction: column;
     gap: 20px;
 }
+
+/* short-txt */
+
+.short-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.short-txt h2{
+    color:  hsl(14, 45%, 36%);
+}
+
+.short-txt ul{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.short-txt li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+    
